@@ -1,0 +1,17 @@
+#f1{
+  background-color: gainsboro;
+}
+
+input[type=text],input[type=password]{
+  width: 96%;
+  margin-bottom: 10px;
+}
+
+input[type=text]:focus,input[type=password]:focus{
+  background-color: aquamarine;
+}
+
+select{
+  width: 50%;
+  float: left;
+}
