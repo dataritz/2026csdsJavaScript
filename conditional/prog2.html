@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>WAP to find largest number amoung Three numbers.</p>
+  <input type="text" placeholder="Enter first number" id="t1">
+  <input type="text" placeholder="Enter second number" id="t2">
+  <input type="text" placeholder="Enter third number" id="t3">
+  <button onclick="check()">Check</button>
+  <h3 id="ans"></h3>
+  <script>
+    function check(){
+    let num1 = Number(document.getElementById("t1").value);
+    let num2 = Number(document.getElementById("t2").value);
+    let num3 = Number(document.getElementById("t3").value);
+    document.getElementById("t1").setAttribute("style","background-color:white");
+    document.getElementById("t2").setAttribute("style","background-color:white");
+    document.getElementById("t3").setAttribute("style","background-color:white");
+    if(num1>num2 && num1>num3)
+     document.getElementById("t1").setAttribute("style","background-color:green");
+    else if(num2>num3)
+    document.getElementById("t2").setAttribute("style","background-color:green");
+    else
+    document.getElementById("t3").setAttribute("style","background-color:green");
+    }
+</script>
+</body>
+</html>

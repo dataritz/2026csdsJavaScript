@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button{
+      margin-top: 10px;
+      width: 40px;
+      background-color: blueviolet;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="t1" placeholder="Enter First number">
+  <input type="text" id="t2" placeholder="Enter second number">
+  <br>
+  <button onclick="add()">+</button>
+  <button onclick="sub()">-</button>
+  <button onclick="mul()">*</button>
+  <h1 id="ans"></h1>
+  <script>
+    function add(){
+      let n1 = document.getElementById('t1').value;
+      let n2 = document.getElementById('t2').value;
+      document.getElementById('ans').innerHTML = Number(n1)+Number(n2);
+    }
+    function sub(){
+      let n1 = document.getElementById('t1').value;
+      let n2 = document.getElementById('t2').value;
+      document.getElementById('ans').innerHTML = Number(n1)-Number(n2);
+    }
+    function mul(){
+      let n1 = document.getElementById('t1').value;
+      let n2 = document.getElementById('t2').value;
+      document.getElementById('ans').innerHTML = Number(n1)*Number(n2);
+    }
+  </script>
+</body>
+</html>
