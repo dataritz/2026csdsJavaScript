@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>WAP to find triangle</p>
+  <input type="text" placeholder="Enter first Side" id="t1">
+  <input type="text" placeholder="Enter second Side" id="t2">
+  <input type="text" placeholder="Enter third Side" id="t3">
+  <button onclick="check()">Check</button>
+  <h3 id="ans"></h3>
+  <script>
+    function check(){
+    let side1 = Number(document.getElementById("t1").value);
+    let side2 = Number(document.getElementById("t2").value);
+    let side3 = Number(document.getElementById("t3").value);
+    if(side1==side2 && side2==side3)
+      document.getElementById("ans").innerHTML = "Equilateral";
+    else if(side1==side2 || side2==side3 || side3==side1 )
+    document.getElementById("ans").innerHTML = "Isosceles";
+  else
+  document.getElementById("ans").innerHTML = "Scalene";
+    }
+</script>
+</body>
+</html>

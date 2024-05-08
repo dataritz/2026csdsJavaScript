@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>WAP that reads a floting point number and prints "Zero" if the number is zero. otherwise print positive or negative.</p>
+  <input type="text" placeholder="Enter Any number" id="t1">
+  <button onclick="check()">Check</button>
+  <h3 id="ans">Answer=> </h3>
+  <script>
+    function check(){
+      let num = document.getElementById("t1").value;
+      if(num==0)
+        document.getElementById("ans").innerHTML = "Zero";
+      else if(num>0)
+      document.getElementById("ans").innerHTML = "positive";
+      else
+      document.getElementById("ans").innerHTML = "negative";
+    }
+  </script>
+</body>
+</html>

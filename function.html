@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h4 onclick="add(10,20)">Traditional function</h4>
+  <h3 onclick="add1(12,2)">Function Expression</h3>
+  <h2 onclick="add2(10,30)">Arrow Function</h2>
+  <script>
+    function add(a,b){
+      console.log(a+b)
+    }
+
+    const add1 = function(a,b){
+      console.log(a+b);
+    }
+
+    const add2 = (a,b)=>{
+      console.log(a+b);
+    }
+
+  </script>
+</body>
+</html>

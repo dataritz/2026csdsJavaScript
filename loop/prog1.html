@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" placeholder="Enter any number" id="t1" onkeydown="table()">
+  <p id="p1"></p>
+  <script>
+    function table(){
+      let num = document.getElementById("t1").value;
+      let ans = "";
+      if(event.key == "Enter"){
+        for(i=1;i<=10;i++){
+        ans = ans +`${num} X ${i} = ${num*i}` + `<br>`;
+      }
+      document.getElementById("p1").innerHTML = ans;
+      }
+      
+    }
+  </script>
+</body>
+</html>
