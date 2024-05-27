@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="id1">
+
+  </div>
+  <button onclick="display1()">click</button>
+  <script>
+    let name = ['Gopal Gupta','Ram Mohan','Sita','Bob','Joy']
+    function display(){
+      let para = `<p>${name}</p>`
+      document.getElementById('id1').innerHTML = para;
+    }
+    
+    function display1(){
+      name.map(()=>{ return display()})
+    }
+  </script>
+</body>
+</html>

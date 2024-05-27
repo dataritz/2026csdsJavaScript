@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="t1" placeholder="Enter three comma seperated number ">
+  <button onclick="display()">Display</button>
+  <script>
+    function display(){
+      let values = document.getElementById("t1").value;
+      let arr = values.split(",");
+      let arr1 = arr.map((n)=>{return Number(n)});
+      arr1.sort((a,b)=>{return b-a})
+      console.log(arr1[0])
+    }
+  </script>
+</body>
+</html>
