@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .p1{
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <p class="p1" id="p11">Para-1</p>
+  <p class="p1" name = "para1">Para-2</p>
+  <p class="p1">Para-3</p>
+  <h1 class="p1">Heading</h1>
+  <button onclick="display()">Click me</button>
+  <script>
+    function display(){
+      let allPara = document.querySelectorAll('p')
+      console.log(allPara);
+    }
+  </script>
+</body>
+</html>
